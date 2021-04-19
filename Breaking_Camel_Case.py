@@ -1,23 +1,17 @@
 def solution(s):
-    slice_pos = 0
+    current_slice = 0
     last_slice = 0
-    add_string = " "
     word_bank = []
     for letter in s:
         if letter == letter.upper():
-            word_bank.append(s[last_slice:slice_pos])
-            last_slice = slice_pos
-        slice_pos += 1
-    word_bank.append(s[last_slice:slice_pos])
+            word_bank.append(s[last_slice:current_slice])
+            last_slice = current_slice
+        current_slice += 1
+    word_bank.append(s[last_slice:current_slice])
     
-    broken = " ".join(word_bank)
+    broken_up = " ".join(word_bank)
     
-    return broken
-    
-
-test_case = "helloWorld"
-
-print(solution(test_case))
+    return broken_up
 
 """
 

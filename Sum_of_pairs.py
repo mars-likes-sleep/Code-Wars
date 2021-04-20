@@ -1,3 +1,9 @@
+"""
+Given a list of integers and a single sum value, return the first two
+ values (parse from the left please) in order of appearance that add up
+  to form the sum.
+"""
+
 #Optimal solution; couldn't figure this one out on my own.
 
 def sum_pairs(lst, s):
@@ -6,7 +12,3 @@ def sum_pairs(lst, s):
         if s - i in cache:
             return [s - i, i]
         cache.add(i)
-
-l1 = [2, 4, 3, 5, 8, 1, 6]
-
-print(sum_pairs(l1, 9))

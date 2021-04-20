@@ -1,3 +1,8 @@
+"""
+Complete the solution so that the function will break up camel casing,
+ using a space between words.
+"""
+
 def solution(s):
     current_slice = 0
     last_slice = 0

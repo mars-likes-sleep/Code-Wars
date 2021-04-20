@@ -1,4 +1,4 @@
-#Optimal solution; couldn't figure this one out on my own
+#Optimal solution; couldn't figure this one out on my own.
 
 def sum_pairs(lst, s):
     cache = set()

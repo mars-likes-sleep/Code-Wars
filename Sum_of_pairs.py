@@ -12,3 +12,4 @@ def sum_pairs(lst, s):
         if s - i in cache:
             return [s - i, i]
         cache.add(i)
+

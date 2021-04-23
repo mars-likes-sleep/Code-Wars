@@ -12,18 +12,18 @@ a list of moves of the selection cursor (which are up, down, left, right).
 	Output
 
 The list of characters who have been hovered by the selection cursor
- after all the moves.
+after all the moves.
 
 Selection cursor is circular horizontally but not vertically!
 
 As you might remember from the game, the selection cursor rotates
- horizontally but not vertically; that means that if I'm in the leftmost
-  and I try to go left again I'll get to the rightmost (examples: from
-   Ryu to Vega, from Ken to M.Bison) and vice versa from rightmost to
-    leftmost.
+horizontally but not vertically; that means that if I'm in the leftmost
+and I try to go left again I'll get to the rightmost (examples: from
+Ryu to Vega, from Ken to M.Bison) and vice versa from rightmost to
+leftmost.
 
 Instead, if I try to go further up from the upmost or further down from
- the downmost, I'll just stay where I am located.
+the downmost, I'll just stay where I am located.
 
 """
 

@@ -32,6 +32,7 @@ fighters = [
 	["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
 	]
 
+
 def street_fighter_selection(fighters, initial_position, moves):
     
     x = 0

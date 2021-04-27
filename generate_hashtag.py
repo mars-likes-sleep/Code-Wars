@@ -10,6 +10,7 @@ If the final result is longer than 140 chars it must return false.
 If the input or the result is an empty string it must return false.
 """
 
+
 def generate_hashtag(s):
     
     if s == '':
@@ -28,15 +29,12 @@ def generate_hashtag(s):
 """
 Optimal solution
 
-def generate_hashtag(s):
 
+def generate_hashtag(s):
     if s == '':
-        return False
-        
-    hashtag = "#"
-    
+        return False        
+    hashtag = "#"    
     for word in s.split():
-		hashtag += word.capitalize()
-	    
+		hashtag += word.capitalize()	    
 	return False if len(hashtag) > 140 else hashtag
 """
